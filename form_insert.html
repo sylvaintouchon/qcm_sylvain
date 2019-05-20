@@ -1,0 +1,43 @@
+<!-- form.insert.html -->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lib/boostrap/css/bootstrap.css">
+    </head>
+    
+       <!-- <div class="ml-md-5"> -->
+        <div>    
+
+            <form method = "post" action = "/developpeur/qcm/form_insert.php">
+                entrer la question             
+                <br> 
+                <textarea name="question" rows="8" cols="40" maxlength="200" required>
+                </textarea>
+                <br>
+                réponse1 possible
+                <input type="text" required name="answer1" value="" />
+                <br>
+                réponse2 possible
+                <input type="text" required name="answer2" value="" />
+                <br>
+                réponse3 possible
+                <input type="text" required name="answer3" value="" />
+                <br>
+                réponse exacte                     
+                <input type="radio" name="answer_true" value="1" id="1" /> <label for="1">1</label>
+                <input type="radio" name="answer_true" value="2" id="2" /> <label for="2">2</label>
+                <input type="radio" name="answer_true" value="3" id="3" /> <label for="3">3</label>
+                <br>
+                Catégorie
+                <input type="text" name="categorie"/>
+                <br>
+                <input type="submit" class="btn btn-success" name = "envoyer" value="envoyer" />
+            </form>
+
+
+        </div>
+    </body>
+</html>
